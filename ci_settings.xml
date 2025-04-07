@@ -21,6 +21,11 @@
 			<id>nvd.apikey</id>
 			<password>${env.nvd_api_key}</password>
 		</server>
+		<server>
+			<id>general-parent</id>
+			<username>x-access-token</username>
+			<password>${env.general_parent_token}</password>
+		</server>
 	</servers>
 
 	<profiles>
