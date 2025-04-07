@@ -39,8 +39,14 @@
 	</scm>
 
 	<distributionManagement>
+		<repository>
+			<id>project-repo</id>
+			<name>Project Repository</name>
+			<url>https://maven.pkg.github.com/${project.organization.name}/${project.module-root.artifactId}</url>
+		</repository>
 		<site>
 			<id>project-site-repo</id>
+			<name>Project's Site - Repository</name>
 			<url>${project.site.deploy.url}</url>
 		</site>
 	</distributionManagement>
