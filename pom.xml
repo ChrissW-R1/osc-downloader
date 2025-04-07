@@ -52,19 +52,4 @@
 			<url>https://maven.pkg.github.com/ChrissW-R1/general-parent</url>
 		</repository>
 	</repositories>
-
-	<dependencies>
-	</dependencies>
-
-	<build>
-		<pluginManagement>
-			<plugins>
-			</plugins>
-		</pluginManagement>
-		<plugins>
-		</plugins>
-	</build>
-
-	<profiles>
-	</profiles>
 </project>
