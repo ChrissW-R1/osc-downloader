@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>me.chrisswr1</groupId>
+		<artifactId>java-parent</artifactId>
+		<version>2.3.1</version>
+	</parent>
+
+	<artifactId>osc-downloader</artifactId>
+	<version>0.1.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>OSC Downloader</name>
+	<url>https://github.com/ChrissW-R1/osc-downloader</url>
+	<inceptionYear>2025</inceptionYear>
+	<description>service to download permanently OpenStreetMap changes</description>
+	<organization>
+		<name>ChrissW-R1</name>
+		<url>http://ChrissW-R1.me</url>
+	</organization>
+
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<properties>
+		<project.module-root.relativedir>./</project.module-root.relativedir>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>general-parent</id>
+			<name>General Parent</name>
+			<url>https://maven.pkg.github.com/ChrissW-R1/general-parent</url>
+		</repository>
+	</repositories>
+
+	<dependencies>
+	</dependencies>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+			</plugins>
+		</pluginManagement>
+		<plugins>
+		</plugins>
+	</build>
+
+	<reporting>
+		<outputDirectory>${project.build.directory}/site</outputDirectory>
+		<plugins>
+		</plugins>
+	</reporting>
+
+	<scm>
+		<developerConnection>scm:git:git@github.com:ChrissW-R1/osc-downloader.git</developerConnection>
+		<url>https://github.com/ChrissW-R1/osc-downloader</url>
+	</scm>
+
+	<profiles>
+	</profiles>
+</project>
