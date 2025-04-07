@@ -9,30 +9,41 @@
 		<version>2.3.1</version>
 	</parent>
 
+	<!-- project identifier -->
 	<artifactId>osc-downloader</artifactId>
 	<version>0.1.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>OSC Downloader</name>
 	<url>https://github.com/ChrissW-R1/osc-downloader</url>
+	<description>
+		service to download permanently OpenStreetMap changes
+	</description>
 	<inceptionYear>2025</inceptionYear>
-	<description>service to download permanently OpenStreetMap changes</description>
+
 	<organization>
 		<name>ChrissW-R1</name>
 		<url>http://ChrissW-R1.me</url>
 	</organization>
 
-	<licenses>
-		<license>
-			<name>Apache License, Version 2.0</name>
-			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-			<distribution>repo</distribution>
-		</license>
-	</licenses>
-
 	<properties>
+		<project.module-root.artifactId>osc-downloader</project.module-root.artifactId>
 		<project.module-root.relativedir>./</project.module-root.relativedir>
 	</properties>
+
+	<scm>
+		<url>https://github.com/${project.organization.name}/${project.module-root.artifactId}</url>
+		<connection>scm:git:${project.scm.url}.git</connection>
+		<developerConnection>${project.scm.connection}</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
+	<distributionManagement>
+		<site>
+			<id>project-site-repo</id>
+			<url>${project.site.deploy.url}</url>
+		</site>
+	</distributionManagement>
 
 	<repositories>
 		<repository>
@@ -53,17 +64,6 @@
 		<plugins>
 		</plugins>
 	</build>
-
-	<reporting>
-		<outputDirectory>${project.build.directory}/site</outputDirectory>
-		<plugins>
-		</plugins>
-	</reporting>
-
-	<scm>
-		<developerConnection>scm:git:git@github.com:ChrissW-R1/osc-downloader.git</developerConnection>
-		<url>https://github.com/ChrissW-R1/osc-downloader</url>
-	</scm>
 
 	<profiles>
 	</profiles>
